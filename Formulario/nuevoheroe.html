@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="descuento">20% de descuento en todos los productos!</div>
+        <div class="tienda"><img src="./img/tienda.png" alt="Logo Tienda">
+            <p>Nombre Tienda</p>
+        </div>
+        <nav class="navegacion">
+            <a href="./contacto.html">Contacto</a>
+            <a href="./registro.html">Registrarme</a>
+            <a href="./index.html">Ingresar</a>
+        </nav>
+    </header>
+    <main class="caja-aniadir-heroe">
+        <h1 class="titulo-aniadir-heroe">Añadí tu super!</h1>
+        <p class="titulo-aniadir-heroe">Agregá tu personaje favorito completando las opciones.</p>
+        <form action="./superheroes.html">
+            <div>
+                <div class="caja-columna izquierda">
+                    <label class="subtitulos-aniadir-heroe" for="nombre">*Nombre</label>
+                    <input class="form-aniadir-heroe" type="text" name="nombre" id="nombre" placeholder="Josefina Bravo">
+                    <label class="subtitulos-aniadir-heroe" for="fecha">Fecha</label>
+                    <input class="form-aniadir-heroe" type="date" name="fecha" id="fecha">
+                    <textarea class="form-aniadir-heroe descripcion-heroe"name="descripcion" cols="30" rows="10" placeholder="Descripción"></textarea>
+                </div>
+                <div class="caja-columna derecha">
+                    <label class="subtitulos-aniadir-heroe" for="especie">*Especie</label>
+                    <select class="form-aniadir-heroe" name="especie" id="especie">
+                        <option selected disable hidden>Especie</option>
+                        <option value="zen whoberi">Zen Whoberi</option>
+                        <option value="badoon">Badoon</option>
+                        <option value="kronans">Kronans</option>
+                        <option value="flora colossus">Flora colossus</option>
+                    </select>
+                    <label class="subtitulos-aniadir-heroe" for="agregar-foto">Agregar Foto</label>
+                    <input type="file" name="agregar-foto" id="agregar-foto" accept=".jpg, .png">
+                    <div><label class="subtitulos-aniadir-heroe poderes" for="poderes">Poderes</label>
+                        <div>
+                            <input class="form-check-radio" type="checkbox" name="poderes" id="volar" value="Volar">
+                            <label class="checkbox-radio" for="volar">Volar</label>
+                        </div> 
+                        <div>
+                            <input class="form-check-radio" type="checkbox" name="poderes" id="superinteligente" value="Superinteligencia">
+                            <label class="checkbox-radio" for="superinteligente">Superinteligencia</label>
+                        </div>
+                        <div>
+                            <input class="form-check-radio" type="checkbox" name="poderes" id="rayos-laser" value="rayos-laser">
+                            <label class="checkbox-radio" for="rayos-laser">Vista de rayo láser</label>
+                        </div>
+                        <div>
+                            <input class="form-check-radio" type="checkbox" name="poderes" id="billetera-gorda" value="billetera-gorda">
+                            <label class="checkbox-radio" for="billetera-gorda">Billetera gorda</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div><label class="subtitulos-aniadir-heroe" for="personajes">Tipo de personajes</label>
+                        <div>
+                            <input class="form-check-radio" type="radio" name="personajes" id="heroina">
+                            <label class="checkbox-radio" for="heroina">Héroe / Heroina</label>
+                        </div>
+                        <div>
+                            <input class="form-check-radio" type="radio" name="personajes" id="villana">
+                            <label class="checkbox-radio" for="villana">Villano / Villana</label>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div><input class="boton aniadir-heroe" type="submit" name="aniadir" value="Añadir"></div> 
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+
+</html>
