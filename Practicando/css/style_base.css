@@ -115,6 +115,39 @@ main section .podio h3 {
   padding-bottom: 60px;
   /*Añadimos flex*/
 }
+.formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input[type=email]{
+  outline: none;
+}
+
+form input[type=submit]{
+  border-radius: 10px;
+  background-color: var(--green);
+  transition: all 1s;
+  
+  border: none;
+}
+
+form input[type=submit]:hover{
+  background-color: var(--red);
+}
+
+form input[type=email]:focus{
+  border: 5px solid green;
+}
+form p {
+  margin-bottom: 5px;
+}
 
 footer {
   background: #222;
